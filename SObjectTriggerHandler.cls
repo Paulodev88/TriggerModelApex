@@ -5,7 +5,7 @@ public with sharing class SObjectTriggerHandler extends TriggerHandler  {
     private Map<Id, SObject> newMap;
     private Map<Id, SObject> oldMap;
 
-    public PresenteTriggerHandler() {
+    public SObjectTriggerHandler() {
         this.newList = (List<SObject>) Trigger.new;
         this.oldList = (List<SObject>) Trigger.old;
         this.newMap = (Map<Id,SObject>) Trigger.newMap;
